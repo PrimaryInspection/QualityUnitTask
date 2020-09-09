@@ -7,7 +7,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "request")
-public class Request implements Serializable {
+public class Request implements Serializable,Comparable<Request> {
 
     private static final long serialVersionUID = -8649221221971982229L;
 
@@ -153,5 +153,10 @@ public class Request implements Serializable {
                 ", endDate='" + endDate + '\'' +
                 ", responseWaitTime=" + responseWaitTime +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Request o) {
+        return this.getId().compareTo(o.getId());
     }
 }

@@ -61,11 +61,11 @@ INSERT INTO webhosting.service(id,name,variation_id) VALUES
 -- Table `webhosting`.`category`
 -- -----------------------------------------------------
 INSERT INTO webhosting.category(id,name) VALUES
-(1,'*'),
 (2,'Category type 2'),
 (6,'Category type 6');
 
 INSERT INTO webhosting.category(id,name,sub_category_id) VALUES
+(1,'Category type 1',4),
 (3,'Category type 3',3),
 (4,'Category type 4',2),
 (5,'Category type 5',5),

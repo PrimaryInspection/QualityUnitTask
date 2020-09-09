@@ -6,6 +6,9 @@
         <input type="number" min="0" name="limit" class="form-control" value="${limit!}" placeholder="Choose limit"/>
         <button type="submit" class="btn btn-primary ml-2">Search</button>
     </form>
+    <form method="get" action="/addRequest" class="form-inline">
+        <button type="submit" class="btn btn-primary ml-2">Add Request</button>
+    </form>
 
     <#if requestList??>
         <table class="table">
